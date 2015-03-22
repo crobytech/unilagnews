@@ -1,0 +1,48 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="teliov.com.unilagnews.NewsDetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/abc_action_bar_default_padding_material"
+        android:layout_margin="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_title_view"
+            android:textSize="@dimen/abc_text_size_headline_material"
+
+            android:layout_marginBottom="@dimen/abc_action_bar_subtitle_bottom_margin_material"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_date_view"
+            android:textStyle="italic"
+            android:textSize="@dimen/abc_text_size_small_material"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/abc_action_bar_subtitle_bottom_margin_material"
+            android:layout_marginBottom="@dimen/abc_action_bar_subtitle_bottom_margin_material"
+            android:id="@+id/detail_summary_view"/>
+
+        <Button
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View on Website"
+            android:layout_marginTop="@dimen/abc_action_bar_subtitle_bottom_margin_material"
+            android:layout_marginBottom="@dimen/abc_action_bar_subtitle_bottom_margin_material"
+            android:id="@+id/view_detail_on_web"
+            android:shadowColor="@color/button_material_light"/>
+    </LinearLayout>
+
+</ScrollView>
