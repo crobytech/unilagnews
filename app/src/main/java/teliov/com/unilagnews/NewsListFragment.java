@@ -23,7 +23,7 @@ import android.widget.Toast;
 import teliov.com.unilagnews.adapter.NewsAdapter;
 import teliov.com.unilagnews.data.UnilagNewsContract;
 import teliov.com.unilagnews.network.FetchDataTask;
-
+import teliov.com.unilagnews.services.UnilagNewsService;
 
 
 public class NewsListFragment extends Fragment implements LoaderManager.LoaderCallbacks<Cursor>{
@@ -93,7 +93,10 @@ public class NewsListFragment extends Fragment implements LoaderManager.LoaderCa
     }
 
     private void fetchNews(){
-        new FetchDataTask(getActivity()).execute("testString");
+        Intent intent = new Intent(getActivity(), UnilagNewsService.class);
+        intent.putExtra(UnilagNewsService.HANDLE_INTENT, "test string");
+        getActivity().startService(intent);
+        //new FetchDataTask(getActivity()).execute("testString");
     }
 
     @Override

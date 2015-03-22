@@ -23,6 +23,9 @@
             android:name=".data.UnilagNewsProvider"
             android:authorities="teliov.com.unilagnews" />
 
+        <service android:name=".services.UnilagNewsService"/>
+
+
         <activity
             android:name=".NewsDetail"
             android:label="@string/title_activity_news_detail"
