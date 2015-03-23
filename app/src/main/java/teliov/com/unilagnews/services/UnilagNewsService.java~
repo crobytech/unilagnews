@@ -43,8 +43,8 @@ public class UnilagNewsService extends IntentService{
         String dataStr = null;
 
         try{
-            final String NEWS_BASE_URL = "http://196.45.48.245:8080/api/news_items/?format=json";
-            //final String NEWS_BASE_URL = "http://10.0.2.2:8000/api/news_items/?format=json";
+            //final String NEWS_BASE_URL = "http://196.45.48.245:8080/api/news_items/?format=json";
+            final String NEWS_BASE_URL = "http://10.0.2.2:8000/api/news_items/?format=json";
 
             URL mUrl = new URL(NEWS_BASE_URL);
 
