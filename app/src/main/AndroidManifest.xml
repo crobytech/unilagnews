@@ -29,6 +29,7 @@
         <activity
             android:name=".NewsDetail"
             android:label="@string/title_activity_news_detail"
+            android:theme="@style/AppTheme"
             android:parentActivityName=".NewsList" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
